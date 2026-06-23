@@ -1,0 +1,37 @@
+:root{
+    --light-main : #EFEFE6;
+    --light-accent : #DB8C69;
+    --mid-accent : #56BA4A;
+    --dark-accent : #AF4054;
+    --dark-main : #1e2a2b;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-main);
+    color: var(--dark-main);
+    margin: 0px;
+}
+
+main{
+    margin: 0px auto;
+    max-width: 95vw;
+}
+
+header p{
+    font-size: large;
+    font-weight: 700;
+    margin: 0px;
+}
+
+h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 0px;
+}
+
+header{
+    background-color: var(--dark-main);
+    color: var(--light-main);
+    padding-left: 2%;
+}

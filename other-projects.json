@@ -1,0 +1,19 @@
+{
+    "RIT Worldbuilding Club: Magitech vs Old Magic" : {
+        "description" : "As part of the RIT Worlbuilding Club I lead the designing of a world built around the premise of a fight between fantasy magic and magitech(combination of technology and magic)",
+        "teamSize" : 3,
+        "role" : "Design Lead",
+        "contentType" : "picture",
+        "contentLink" : "media/magitech.png",
+        "siteLink" :"project-sites/magitech"
+    },
+    
+    "Osu! Map Generator (In Development)" : {
+        "description" : "The idea for this project is to make an AI that can create a osu map for any song with the desired dificulty. This project is currently in development and probably wont be done for a while",
+        "teamSize" : 1,
+        "role" : "Sole Developer",
+        "contentType" : "picture",
+        "contentLink" : "media/osu.png",
+        "siteLink" :"project-sites/osumapgen"
+    }
+}

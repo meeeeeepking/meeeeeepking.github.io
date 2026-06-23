@@ -1,0 +1,309 @@
+
+/*
+color palet
+#EFEFE6 white
+#DB8C69 orange
+#56BA4A green
+#AF4054 red
+#2F4143 dark gray
+*/
+
+/*global styles*/
+
+:root{
+    --light-main : #EFEFE6;
+    --light-accent : #DB8C69;
+    --mid-accent : #56BA4A;
+    --dark-accent : #AF4054;
+    --dark-main : #1e2a2b;
+}
+
+a:link{
+    text-decoration: none;
+    color: var(--dark-main);
+}
+
+a:visited{
+    color: var(--dark-main);
+}
+
+a:focus{
+    text-decoration: underline;
+}
+
+a:hover{
+    color: var(--dark-accent);
+}
+
+a:active{
+    color: var(--light-accent);
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    background-color: var(--light-main);
+    color: var(--dark-main);
+    max-width: 100vw;
+}
+
+.project{
+    padding: 1rem;
+    display: flex;
+}
+.project img{
+    margin-right: 1rem;
+    box-shadow: 6px 6px var(--mid-accent);
+    max-height: 250px;
+    height: 200px;
+}
+.project div{
+    min-width: 200px;
+}
+.project h3{
+    font-size: 1.5rem;
+    margin: 1rem 0px;
+}
+
+p{
+    font-weight: 500;
+}
+
+
+
+.nav-mark{
+    position: relative;
+    top: -120px
+}
+
+/*header styles*/
+header{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    background-color: var(--dark-main);
+    color: var(--light-main);
+    position: sticky;
+    box-sizing: border-box;
+    top: 0px;
+    overflow: hidden;
+}
+header #name{
+    margin-left: 2rem;
+    flex: 2;
+}
+header #name *{
+    margin: 0px;
+}
+header h1{
+    font-size: 3rem;
+}
+
+#links{
+    display: flex;
+}
+#github{
+    width: 70px;
+    height: 70px;
+    background:url(../media/github.svg) no-repeat;
+    text-indent: -9999px;
+}
+
+#linkedin{
+    width: 70px;
+    height: 70px;
+    background: url(../media/linkedin.svg) no-repeat;
+    text-indent: -9999px;
+}
+
+/*main styles*/
+main{
+    display: flex;
+}
+
+/*nav styles*/
+nav{
+    background-color: var(--dark-accent);
+    min-width: 125px;
+    max-height: calc(100vh - 120px);
+    position: sticky;
+    top: 120px;
+}
+nav a{
+    display: block;
+    font-weight: 700;
+    font-size: large;
+    padding: 2rem 0px;
+    border-top: 2px solid var(--dark-main);
+    border-bottom: 2px solid var(--dark-main);
+}
+nav a:first-child{
+    border-top-width: 0px;
+}
+nav a:last-child{
+    border-bottom-width: 4px;
+}
+nav a:link{
+    color: var(--light-main);
+    text-decoration: none;
+}
+nav a:visited{
+    color: var(--light-main);
+    text-decoration: none;
+}
+nav a:focus{
+    color: var(--light-main);
+    text-decoration: none;
+    border: 2px solid var(--mid-accent);
+}
+nav a:hover{
+    color: var(--light-main);
+    text-decoration: underline;
+}
+nav a:active{
+    color: var(--light-main);
+    text-decoration: underline;
+}
+
+/*content styles*/
+#content{
+    padding: 0px 0.5rem;
+    flex: 90%;
+}
+#content>div{
+    margin: 1.5rem 0px 0px 0px;
+}
+#content h2{
+    font-size: 2rem;
+    margin: 0px;
+}
+
+#about-me *{
+    max-width: 600px;
+}
+#about-me p{
+    margin: 0px auto;
+}
+#about-me h2{
+    text-align: center;
+    margin: 0px auto;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minMax(600px, 1fr));
+}
+#game-projects h2{
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+#other-projects h2{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+button{
+    background-color: transparent;
+    border: 2px solid var(--dark-main);
+    color: var(--dark-main);
+    font-weight: 600;
+    font-size: larger;
+    border-radius: 1rem;
+    margin-left: 10%;
+    width: 80%;
+}
+
+button:empty{
+    display: none;
+}
+
+@media screen and (max-width: 1505px){
+    .project{
+        display: initial;
+    }
+    .project img{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:930px){
+    main{
+        flex-direction: column;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content:space-around;
+    }
+    nav a{
+        border: 0px;
+        border-right: 2px solid var(--dark-main);
+        border-left: 2px solid var(--dark-main);
+        padding: 0px;
+        text-align: center;
+        width: 100%;
+    }
+    nav a:first-child{
+        border-left-width: 0px;
+    }
+    nav a:last-child{
+        border-right-width: 0px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #content>div{
+        margin: 1rem;
+    }
+    #about-me>*{
+        margin-left: auto;
+    }
+    #game-projects{
+        grid-template-rows: 50px repeat(4, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: "title"
+                            "one"
+                            "two"
+                            "three"
+                            "four";
+    }
+    #other-projects{
+        grid-template-rows: 50px repeat(2, 1fr);
+        grid-template-columns: 1fr ;
+        grid-template-areas: "title"
+                             "one"
+                             "two";
+    }
+    .project{
+        text-align: center;
+        padding: 1rem 0px;
+    }
+    .project div p{
+        text-align: left;
+        max-width: 600px;
+        margin: 1em auto;
+    }
+    
+}
+
+@media screen and (max-width: 700px){
+    #links{
+        flex-direction: column;
+    }
+    #linkedin{
+        width: 50px;
+        height: 50px;
+    }
+    #github{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    header h1{
+        font-size: 2.4rem;
+    }
+}
