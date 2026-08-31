@@ -1,11 +1,11 @@
 {
     "RIT Worldbuilding Club: Magitech vs Old Magic" : {
-        "description" : "As part of the RIT Worlbuilding Club I lead the designing of a world built around the premise of a fight between fantasy magic and magitech(combination of technology and magic)",
+        "description" : "As part of the RIT Worlbuilding Club I led the designing of a world built around the premise of a fight between fantasy magic and magitech(combination of technology and magic)",
         "teamSize" : 3,
         "role" : "Design Lead",
         "contentType" : "picture",
-        "contentLink" : "media/magitech.png",
-        "siteLink" :"project-sites/magitech"
+        "contentLink" : "/media/magitech.png",
+        "siteLink" :"/other-projects/magitech"
     },
     
     "Osu! Map Generator (In Development)" : {
@@ -13,7 +13,7 @@
         "teamSize" : 1,
         "role" : "Sole Developer",
         "contentType" : "picture",
-        "contentLink" : "media/osu.png",
-        "siteLink" :"project-sites/osumapgen"
+        "contentLink" : "/media/osu.png",
+        "siteLink" :"/other-projects/osumapgen"
     }
 }

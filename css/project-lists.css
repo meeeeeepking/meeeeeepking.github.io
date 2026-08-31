@@ -34,11 +34,6 @@ body{
     margin: 0px;
 }
 
-main{
-    margin: 0px auto;
-    max-width: 95vw;
-}
-
 p{
     font-weight: 500;
 }
@@ -73,7 +68,53 @@ header{
     padding: 0px 1rem;
 }
 
+.project{
+    padding: 1rem;
+    display: flex;
+}
+.project img{
+    margin-right: 1rem;
+    box-shadow: 6px 6px var(--mid-accent);
+    max-height: 250px;
+    height: 200px;
+}
+.project div{
+    min-width: 200px;
+}
+.project h3{
+    font-size: 1.5rem;
+    margin: 1rem 0px;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(2, minMax(400px, 1fr));
+}
+
 footer{
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-left: 1rem;
+}
+
+@media screen and (max-width: 1505px){
+    .project{
+        display: initial;
+    }
+    .project img{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .project{
+        text-align: center;
+        padding: 1rem;
+    }
+    .project div p{
+        text-align: left;
+        margin: 1em auto;
+    }
+    .project-container{
+        grid-template-columns: repeat(1, minMax(350px, 1fr));
+    }
 }

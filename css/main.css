@@ -192,7 +192,7 @@ nav a:active{
 
 .project-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minMax(600px, 1fr));
+    grid-template-columns: repeat(2, minMax(500px, 1fr));
 }
 #game-projects h2{
     margin-top: 0.5rem;
@@ -204,19 +204,17 @@ nav a:active{
     margin-top: 0.5rem;
 }
 
-button{
+.button{
     background-color: transparent;
     border: 2px solid var(--dark-main);
     color: var(--dark-main);
     font-weight: 600;
     font-size: larger;
     border-radius: 1rem;
-    margin-left: 10%;
     width: 80%;
-}
-
-button:empty{
-    display: none;
+    margin: 0px auto;
+    display: block;
+    text-align: center;
 }
 
 @media screen and (max-width: 1505px){
@@ -228,7 +226,7 @@ button:empty{
     }
 }
 
-@media screen and (max-width:930px){
+@media screen and (max-width:1200px){
     main{
         flex-direction: column;
     }
@@ -253,28 +251,12 @@ button:empty{
     }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
     #content>div{
         margin: 1rem;
     }
     #about-me>*{
         margin-left: auto;
-    }
-    #game-projects{
-        grid-template-rows: 50px repeat(4, 1fr);
-        grid-template-columns: 1fr;
-        grid-template-areas: "title"
-                            "one"
-                            "two"
-                            "three"
-                            "four";
-    }
-    #other-projects{
-        grid-template-rows: 50px repeat(2, 1fr);
-        grid-template-columns: 1fr ;
-        grid-template-areas: "title"
-                             "one"
-                             "two";
     }
     .project{
         text-align: center;
@@ -282,10 +264,11 @@ button:empty{
     }
     .project div p{
         text-align: left;
-        max-width: 600px;
         margin: 1em auto;
     }
-    
+    .project-container{
+        grid-template-columns: repeat(1, minMax(350px, 1fr));
+    }
 }
 
 @media screen and (max-width: 700px){

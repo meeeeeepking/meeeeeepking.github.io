@@ -4,48 +4,48 @@
         "teamSize" : 1,
         "role" : "Sole Developer",
         "contentType" : "picture",
-        "contentLink" : "media/big-energy.png",
-        "siteLink" : "project-sites/bigenergy"
+        "contentLink" : "/media/big-energy.png",
+        "siteLink" : "/game-projects/bigenergy"
     },
     "Bad Roommate": {
         "description" : "Bad Roomate is a game I made for the RIT Game Dev Club's Haloween Game Jam 2025 with a team of 3 others. It is a game where you try to be the worst roomate ever by making sure your roomate cant get their chores done.",
         "teamSize" : 4,
         "role" : "Level Designer",
         "contentType" : "picture",
-        "contentLink" : "media/bad-roommate.png",
-        "siteLink" : "project-sites/badroommate"
+        "contentLink" : "/media/bad-roommate.png",
+        "siteLink" : "/game-projects/badroommate"
     },
     "Off The Clock" : {
         "description" : "Off The Clock is a game I made with 2 others based on the theme of Do It Yourself. it is a typing simulator where you are a lazy guy who comes up with ever more rediculous excuses to not do various tasks.",
         "teamSize" : 3,
         "role" : "Tool Developer",
         "contentType" : "picture",
-        "contentLink" : "media/off-the-clock.png",
-        "siteLink" : "project-sites/offtheclock"
+        "contentLink" : "/media/off-the-clock.png",
+        "siteLink" : "/game-projects/offtheclock"
     },
     "Possesion" : {
         "description" : "Possesion is a game I made for the Pixle Jam 2025, it is a top down dungeon crawler where you posses the corpses of your enemies instead of healing.",
         "teamSize" : 1,
         "role" : "Sole Developer",
         "contentType" : "picture",
-        "contentLink" : "media/possesion.png",
-        "siteLink" : "project-sites/possesion"
+        "contentLink" : "/media/possesion.png",
+        "siteLink" : "/game-projects/possesion"
     },
     "Melody" : {
         "description" : "Melody is a game I made with a team at a summer camp. Melody is a platformer where you are a ghost that uses song to attack and make their own platforms.",
         "teamSize" : 6,
         "role" : "Lead Programer",
         "contentType" : "picture",
-        "contentLink" : "media/melody.png",
-        "siteLink" : "project-sites/melody"
+        "contentLink" : "/media/melody.png",
+        "siteLink" : "/game-projects/melody"
     },
     "Simple Tower Defence" : {
         "description" : "This was the first game I made and was for a class in highscool. It is a tower defence game inspired by kingdom rush.",
         "teamSize" : 1,
         "role" : "Sole Developer",
         "contentType" : "picture",
-        "contentLink" : "media/simple-tower-defence.png",
-        "siteLink" :"project-sites/simpletowerdefence"
+        "contentLink" : "/media/simple-tower-defence.png",
+        "siteLink" :"/game-projects/simpletowerdefence"
     }
 }
 
