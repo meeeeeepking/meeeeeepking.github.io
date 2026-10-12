@@ -51,9 +51,10 @@ function CreateProjectString(name, projectsObject){
     <div class="project">
         <img src="${projectsObject[name].contentLink}" alt="image of ${name}">
         <div>
-            <h3><a href="${projectsObject[name].siteLink}">${name}</a></h3>
+            <h3>${name}</h3>
             <p>Role: ${projectsObject[name].role}</p>
             <p>${projectsObject[name].description}</p>
+            <a href="${projectsObject[name].siteLink}">See More</a>
         </div>
     </div>
     `
